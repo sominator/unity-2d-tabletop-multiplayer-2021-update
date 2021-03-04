@@ -56,21 +56,21 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mirror\Cloud\ListServer\ListServerClientApi.cs" />
-    <Compile Include="Assets\Mirror\Cloud\ListServer\ListServerBaseApi.cs" />
-    <Compile Include="Assets\Mirror\Cloud\Core\BaseApi.cs" />
-    <Compile Include="Assets\Mirror\Cloud\Core\Logger.cs" />
-    <Compile Include="Assets\Mirror\Cloud\ApiConnector.cs" />
-    <Compile Include="Assets\Mirror\Cloud\ListServer\ListServerServerApi.cs" />
-    <Compile Include="Assets\Mirror\Cloud\Core\IRequestCreator.cs" />
-    <Compile Include="Assets\Mirror\Cloud\ListServer\ListServer.cs" />
-    <Compile Include="Assets\Mirror\Cloud\Core\JsonStructs.cs" />
-    <Compile Include="Assets\Mirror\Cloud\Core\RequestCreator.cs" />
-    <Compile Include="Assets\Mirror\Cloud\Core\ICoroutineRunner.cs" />
     <Compile Include="Assets\Mirror\Cloud\Core\IUnityEqualCheck.cs" />
+    <Compile Include="Assets\Mirror\Cloud\Core\Events.cs" />
+    <Compile Include="Assets\Mirror\Cloud\Core\IRequestCreator.cs" />
+    <Compile Include="Assets\Mirror\Cloud\Core\JsonStructs.cs" />
     <Compile Include="Assets\Mirror\Cloud\Core\Extensions.cs" />
     <Compile Include="Assets\Mirror\Cloud\ListServer\ListServerJson.cs" />
-    <Compile Include="Assets\Mirror\Cloud\Core\Events.cs" />
+    <Compile Include="Assets\Mirror\Cloud\ListServer\ListServerClientApi.cs" />
+    <Compile Include="Assets\Mirror\Cloud\Core\BaseApi.cs" />
+    <Compile Include="Assets\Mirror\Cloud\Core\Logger.cs" />
+    <Compile Include="Assets\Mirror\Cloud\ListServer\ListServerServerApi.cs" />
+    <Compile Include="Assets\Mirror\Cloud\Core\RequestCreator.cs" />
+    <Compile Include="Assets\Mirror\Cloud\ListServer\ListServerBaseApi.cs" />
+    <Compile Include="Assets\Mirror\Cloud\ApiConnector.cs" />
+    <Compile Include="Assets\Mirror\Cloud\ListServer\ListServer.cs" />
+    <Compile Include="Assets\Mirror\Cloud\Core\ICoroutineRunner.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Mirror\Cloud\Mirror.Cloud.asmdef" />
@@ -306,17 +306,17 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.CecilX">
-      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.CecilX.Rocks">
       <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.CecilX.Mdb">
-      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.CecilX.Pdb">
       <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CecilX">
+      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CecilX.Mdb">
+      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.2.6f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

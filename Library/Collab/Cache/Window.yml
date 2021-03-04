@@ -13,8 +13,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
-    m_Keys: []
-    m_Values: 
+    m_Keys:
+    - Assets/Prefabs/Card1.prefab
+    - Assets/Prefabs/Card2.prefab
+    - Assets/Scripts/PlayerManager.cs
+    - Assets/Scripts/TargetClick.cs
+    - Assets/Scripts/TargetClick.cs.meta
+    - ProjectSettings/EditorBuildSettings.asset
+    - 
+    m_Values: 01010101010101
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

@@ -56,57 +56,57 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mirror\Runtime\NetworkIdentity.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkManager.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\TelepathyTransport.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkManagerHUD.cs" />
     <Compile Include="Assets\Mirror\Runtime\Transport\KCP\MirrorTransport\KcpTransport.cs" />
-    <Compile Include="Assets\Mirror\Runtime\ExponentialMovingAverage.cs" />
-    <Compile Include="Assets\Mirror\Runtime\LogFactory.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkConnectionToClient.cs" />
     <Compile Include="Assets\Mirror\Runtime\Logging\NetworkLogSettings.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkBehaviour.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Logging\LogSettings.cs" />
-    <Compile Include="Assets\Mirror\Runtime\SyncObject.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkClient.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Messages.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkVisibility.cs" />
     <Compile Include="Assets\Mirror\Runtime\AssemblyInfo.cs" />
     <Compile Include="Assets\Mirror\Runtime\Transport\FallbackTransport.cs" />
-    <Compile Include="Assets\Mirror\Runtime\ClientScene.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transport\TelepathyTransport.cs" />
+    <Compile Include="Assets\Mirror\Runtime\NetworkWriter.cs" />
+    <Compile Include="Assets\Mirror\Runtime\LogFilter.cs" />
+    <Compile Include="Assets\Mirror\Runtime\NetworkWriterPool.cs" />
+    <Compile Include="Assets\Mirror\Runtime\CustomAttributes.cs" />
+    <Compile Include="Assets\Mirror\Runtime\NetworkReader.cs" />
+    <Compile Include="Assets\Mirror\Runtime\NetworkConnection.cs" />
+    <Compile Include="Assets\Mirror\Runtime\UNetwork.cs" />
+    <Compile Include="Assets\Mirror\Runtime\NetworkDiagnostics.cs" />
+    <Compile Include="Assets\Mirror\Runtime\ExponentialMovingAverage.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Logging\LogSettings.cs" />
+    <Compile Include="Assets\Mirror\Runtime\SyncObject.cs" />
+    <Compile Include="Assets\Mirror\Runtime\NetworkVisibility.cs" />
     <Compile Include="Assets\Mirror\Runtime\StringHash.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkStartPosition.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkAuthenticator.cs" />
     <Compile Include="Assets\Mirror\Runtime\Logging\EditorLogSettingsLoader.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkWriter.cs" />
-    <Compile Include="Assets\Mirror\Runtime\SyncSet.cs" />
-    <Compile Include="Assets\Mirror\Runtime\LogFilter.cs" />
     <Compile Include="Assets\Mirror\Runtime\Transport\Transport.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkTime.cs" />
     <Compile Include="Assets\Mirror\Runtime\SyncList.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Logging\NetworkHeadlessLogger.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkMessage.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkWriterPool.cs" />
+    <Compile Include="Assets\Mirror\Runtime\FloatBytePacker.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transport\MultiplexTransport.cs" />
+    <Compile Include="Assets\Mirror\Runtime\NetworkServer.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Compression.cs" />
+    <Compile Include="Assets\Mirror\Runtime\LocalConnections.cs" />
+    <Compile Include="Assets\Mirror\Runtime\NetworkManager.cs" />
+    <Compile Include="Assets\Mirror\Runtime\LogFactory.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Messages.cs" />
+    <Compile Include="Assets\Mirror\Runtime\ClientScene.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Logging\NetworkHeadlessLogger.cs" />
     <Compile Include="Assets\Mirror\Runtime\MessagePacker.cs" />
+    <Compile Include="Assets\Mirror\Runtime\DotNetCompatibility.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transport\MiddlewareTransport.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Pool.cs" />
+    <Compile Include="Assets\Mirror\Runtime\RemoteCallHelper.cs" />
+    <Compile Include="Assets\Mirror\Runtime\NetworkConnectionToServer.cs" />
+    <Compile Include="Assets\Mirror\Runtime\NetworkConnectionToClient.cs" />
+    <Compile Include="Assets\Mirror\Runtime\SyncSet.cs" />
+    <Compile Include="Assets\Mirror\Runtime\NetworkIdentity.cs" />
+    <Compile Include="Assets\Mirror\Runtime\NetworkTime.cs" />
+    <Compile Include="Assets\Mirror\Runtime\NetworkManagerHUD.cs" />
     <Compile Include="Assets\Mirror\Runtime\Logging\LogFactory.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkReaderPool.cs" />
     <Compile Include="Assets\Mirror\Runtime\SyncDictionary.cs" />
-    <Compile Include="Assets\Mirror\Runtime\FloatBytePacker.cs" />
-    <Compile Include="Assets\Mirror\Runtime\DotNetCompatibility.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\MultiplexTransport.cs" />
-    <Compile Include="Assets\Mirror\Runtime\CustomAttributes.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\MiddlewareTransport.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkReader.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Pool.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkConnection.cs" />
     <Compile Include="Assets\Mirror\Runtime\Logging\ConsoleColorLogHandler.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkServer.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Compression.cs" />
-    <Compile Include="Assets\Mirror\Runtime\RemoteCallHelper.cs" />
-    <Compile Include="Assets\Mirror\Runtime\LocalConnections.cs" />
-    <Compile Include="Assets\Mirror\Runtime\UNetwork.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkConnectionToServer.cs" />
-    <Compile Include="Assets\Mirror\Runtime\NetworkDiagnostics.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Mirror\Runtime\Mirror.asmdef" />
@@ -341,17 +341,17 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.CecilX">
-      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.CecilX.Rocks">
       <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.CecilX.Mdb">
-      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.CecilX.Pdb">
       <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CecilX">
+      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CecilX.Mdb">
+      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.2.6f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
