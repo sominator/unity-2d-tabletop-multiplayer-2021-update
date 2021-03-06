@@ -1,16 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//the "using Mirror" assembly reference is required on an script that involves networking
 using Mirror;
 
+//the PlayerManager is the main controller script that can act as both server and client. Like all network scripts, it must derive from NetworkBehaviour (instead of the standard MonoBehaviour)
 public class PlayerManager : NetworkBehaviour
 {
+    //Card1 and Card2 are located in the inspector, whereas PlayerArea, EnemyArea, and DropZone are located at runtime within OnStartClient()
     public GameObject Card1;
     public GameObject Card2;
     public GameObject PlayerArea;
     public GameObject EnemyArea;
     public GameObject DropZone;
 
+    //the cards List represents our deck of cards
     List<GameObject> cards = new List<GameObject>();
 
     public override void OnStartClient()
@@ -22,6 +26,7 @@ public class PlayerManager : NetworkBehaviour
         DropZone = GameObject.Find("DropZone");
     }
 
+    //when the server starts, store Card1 and Card2 in the cards deck. Note that server-only methods require the [Server] attribute immediately preceding them!
     [Server]
     public override void OnStartServer()
     {
@@ -29,9 +34,11 @@ public class PlayerManager : NetworkBehaviour
         cards.Add(Card2);
     }
     
+    //Commands are methods requested by clients to run on the server, and require the [Command] attribute immediately preceding them. CmdDealCards() is called by the DrawCards script attached to the client Button
     [Command]
     public void CmdDealCards()
     {
+        //(5x) Spawn a random card from the cards deck on the server, assigning authority over it to the client that requested the Command. Then run RpcShowCard() and indicate that this card was "Dealt"
         for (int i = 0; i < 5; i++)
         {
             GameObject card = Instantiate(cards[Random.Range(0, cards.Count)], new Vector2(0, 0), Quaternion.identity);
@@ -40,20 +47,24 @@ public class PlayerManager : NetworkBehaviour
         }
     }
 
+    //PlayCard() is called by the DragDrop script when a card is placed in the DropZone, and requests CmdPlayCard() from the server
     public void PlayCard(GameObject card)
     {
         CmdPlayCard(card);
     }
 
+    //CmdPlayCard() uses the same logic as CmdDealCards() in rendering cards on all clients, except it specifies the card has been "Played" rather than "Dealt"
     [Command]
     void CmdPlayCard(GameObject card)
     {
         RpcShowCard(card, "Played");
     }
 
+    //ClientRpcs are methods requested by the server to run on all clients, and require the [ClientRpc] attribute immediately preceding them
     [ClientRpc]
     void RpcShowCard(GameObject card, string type)
     {
+        //if the card has been "Dealt," determine whether this client has authority over it, and send it either to the PlayerArea or EnemyArea. For the latter, flip it so the player can't see the front!
         if (type == "Dealt")
         {
             if (hasAuthority)
@@ -66,6 +77,7 @@ public class PlayerManager : NetworkBehaviour
                 card.GetComponent<CardFlipper>().Flip();
             }
         }
+        //if the card has been "Played," send it to the DropZone. If this client doesn't have authority over it, flip it so the player can now see the front!
         else if (type == "Played")
         {
             card.transform.SetParent(DropZone.transform, false);
@@ -76,12 +88,14 @@ public class PlayerManager : NetworkBehaviour
         }
     }
 
+    //CmdTargetSelfCard() is called by the TargetClick script if the client hasAuthority over the gameobject that was clicked
     [Command]
     public void CmdTargetSelfCard()
     {
         TargetSelfCard();
     }
 
+    //CmdTargetOtherCard is called by the TargetClick script if the client does not hasAuthority (haveAuthority?!?) over the gameobject that was clicked
     [Command]
     public void CmdTargetOtherCard(GameObject target)
     {
@@ -89,6 +103,7 @@ public class PlayerManager : NetworkBehaviour
         TargetOtherCard(opponentIdentity.connectionToClient);
     }
 
+    //TargetRpcs are methods requested by the server to run on a target client. If no NetworkConnection is specified as the first parameter, the server will assume you're targeting the client that hasAuthority over the gameobject
     [TargetRpc]
     void TargetSelfCard()
     {
@@ -101,12 +116,14 @@ public class PlayerManager : NetworkBehaviour
         Debug.Log("Targeted by other!");
     }
 
+    //CmdIncrementClick() is called by the IncrementClick script
     [Command]
     public void CmdIncrementClick(GameObject card)
     {
         RpcIncrementClick(card);
     }
 
+    //RpcIncrementClick() is called on all clients to increment the NumberOfClicks SyncVar within the IncrementClick script and log it to the debugger to demonstrate that it's working
     [ClientRpc]
     void RpcIncrementClick(GameObject card)
     {

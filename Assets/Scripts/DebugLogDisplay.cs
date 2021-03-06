@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//this script (found on the internet!) displays logs from the debugger on a built client. Not essential, but helpful!
 public class DebugLogDisplay : MonoBehaviour
 {
     public string output = "";

@@ -14,15 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Prefabs/Card1.prefab
-    - Assets/Prefabs/Card2.prefab
+    - Assets/Scripts/CardFlipper.cs
+    - Assets/Scripts/CardZoom.cs
+    - Assets/Scripts/DebugLogDisplay.cs
+    - Assets/Scripts/DragDrop.cs
+    - Assets/Scripts/DrawCards.cs
     - Assets/Scripts/IncrementClick.cs
-    - Assets/Scripts/IncrementClick.cs.meta
     - Assets/Scripts/PlayerManager.cs
     - Assets/Scripts/TargetClick.cs
-    - ProjectSettings/UnityConnectSettings.asset
     - 
-    m_Values: 0101010101010101
+    m_Values: 010101010101010101
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
