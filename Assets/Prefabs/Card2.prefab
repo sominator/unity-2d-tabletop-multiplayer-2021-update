@@ -14,12 +14,13 @@ GameObject:
   - component: {fileID: 592933921152810636}
   - component: {fileID: 7867904223647231972}
   - component: {fileID: 6801048758087158777}
+  - component: {fileID: 1637688465399037633}
+  - component: {fileID: 7725010045662908890}
   - component: {fileID: 7644697030583447620}
   - component: {fileID: -2382920748008947915}
   - component: {fileID: 8161293923233646642}
   - component: {fileID: -6633772468067879521}
   - component: {fileID: -3413644393881205382}
-  - component: {fileID: 1637688465399037633}
   m_Layer: 8
   m_Name: Card2
   m_TagString: Untagged
@@ -131,6 +132,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardFront: {fileID: 21300000, guid: 4da7c4a1c5be3914da681368bb9a89b0, type: 3}
   CardBack: {fileID: 21300000, guid: 35bf44fe8587d2a409b87a02da1db8d5, type: 3}
+--- !u!114 &1637688465399037633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7251653076908780525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c148dc5160803f42a428d23e54390bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  PlayerManager: {fileID: 0}
+--- !u!114 &7725010045662908890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7251653076908780525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 036be8fe44c349344995391674526a33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  PlayerManager: {fileID: 0}
+  NumberOfClicks: 0
 --- !u!114 &7644697030583447620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,6 +268,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 7725010045662908890}
+          m_TargetAssemblyTypeName: IncrementClick, Assembly-CSharp
+          m_MethodName: IncrementClicks
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!61 &-2382920748008947915
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -317,18 +361,3 @@ MonoBehaviour:
   localPositionSensitivity: 0.01
   localRotationSensitivity: 0.01
   localScaleSensitivity: 0.01
---- !u!114 &1637688465399037633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7251653076908780525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c148dc5160803f42a428d23e54390bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  PlayerManager: {fileID: 0}

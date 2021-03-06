@@ -61,8 +61,9 @@
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\CardZoom.cs" />
     <Compile Include="Assets\Scripts\CardFlipper.cs" />
-    <Compile Include="Assets\Scripts\DebugLogDisplay.cs" />
     <Compile Include="Assets\Scripts\TargetClick.cs" />
+    <Compile Include="Assets\Scripts\DebugLogDisplay.cs" />
+    <Compile Include="Assets\Scripts\IncrementClick.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />

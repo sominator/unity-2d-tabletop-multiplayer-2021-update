@@ -19,12 +19,4 @@ public class TargetClick : NetworkBehaviour
             PlayerManager.CmdTargetOtherCard(gameObject);
         }
     }
-
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(1))
-        {
-            OnTargetClick();
-        }
-    }
 }

@@ -16,12 +16,13 @@ MonoBehaviour:
     m_Keys:
     - Assets/Prefabs/Card1.prefab
     - Assets/Prefabs/Card2.prefab
+    - Assets/Scripts/IncrementClick.cs
+    - Assets/Scripts/IncrementClick.cs.meta
     - Assets/Scripts/PlayerManager.cs
     - Assets/Scripts/TargetClick.cs
-    - Assets/Scripts/TargetClick.cs.meta
-    - ProjectSettings/EditorBuildSettings.asset
+    - ProjectSettings/UnityConnectSettings.asset
     - 
-    m_Values: 01010101010101
+    m_Values: 0101010101010101
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
