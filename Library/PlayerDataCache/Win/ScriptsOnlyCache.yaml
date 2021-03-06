@@ -43,7 +43,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEditor.UI.dll:
-    - UnityEditor.EventSystems.EventTriggerEditor
+    - UnityEditor.UI.GridLayoutGroupEditor
     - UnityEditor.UI.ImageEditor
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
@@ -118,9 +118,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4958}
     - Class: 114
-      Script: {instanceID: 5106}
+      Script: {instanceID: 5034}
     - Class: 114
-      Script: {instanceID: 17428}
+      Script: {instanceID: 5108}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1096,6 +1096,12 @@ ScriptsOnlyBuild:
     className: ServerListUI
   - hash:
       serializedVersion: 2
+      Hash: dc1f9130137ca843b5436736cd9bbb7b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IncrementClick
+  - hash:
+      serializedVersion: 2
       Hash: ff4753395d726a7aadce9c48dcaf99d6
     assemblyName: Mirror.Examples.dll
     namespaceName: Mirror.Examples.MultipleAdditiveScenes
@@ -1214,12 +1220,6 @@ ScriptsOnlyBuild:
     assemblyName: Mirror.Examples.dll
     namespaceName: Mirror.Examples.NetworkRoom
     className: NetworkRoomPlayerExt
-  - hash:
-      serializedVersion: 2
-      Hash: dc1f9130137ca843b5436736cd9bbb7b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: IncrementClick
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

@@ -40,7 +40,7 @@ public class DragDrop : NetworkBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //in our scene, if this gameobject collides with something, it must be the dropzone, as specified in the layer collision matrix
+        //in our scene, if this gameobject collides with something, it must be the dropzone, as specified in the layer collision matrix (cards are part of the "Cards" layer and the dropzone is part of the "DropZone" layer)
         isOverDropZone = true;
         dropZone = collision.gameObject;
     }

@@ -14,17 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Scripts/CardFlipper.cs
-    - Assets/Scripts/CardZoom.cs
-    - Assets/Scripts/DebugLogDisplay.cs
-    - Assets/Scripts/DragDrop.cs
-    - Assets/Scripts/DrawCards.cs
-    - Assets/Scripts/IncrementClick.cs
-    - Assets/Scripts/PlayerManager.cs
-    - Assets/Scripts/TargetClick.cs
+    - Assets/Prefabs/Card1.prefab
+    - Assets/Prefabs/Card2.prefab
+    - Assets/Prefabs/DropZone.prefab
+    - ProjectSettings/Physics2DSettings.asset
+    - ProjectSettings/TagManager.asset
     - 
-    m_Values: 010101010101010101
-  RevisionSummary: 
+    m_Values: 010101010101
+  RevisionSummary: Added layers for collision matrix.
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0
