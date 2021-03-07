@@ -15,7 +15,7 @@ public class IncrementClick : NetworkBehaviour
     //IncrementClicks() is called by the PointerDown event in the Event Trigger component attached to this gameobject
     public void IncrementClicks()
     {
-        //locate the PlayerManager within this client and request the server to run CmdIncrementClick, passing in this gameobject
+        //locate the PlayerManager within this client and request the server to run CmdIncrementClick(), passing in this gameobject
         NetworkIdentity networkIdentity = NetworkClient.connection.identity;
         PlayerManager = networkIdentity.GetComponent<PlayerManager>();
         PlayerManager.CmdIncrementClick(gameObject);

@@ -11,7 +11,7 @@ public class TargetClick : NetworkBehaviour
     //OnTargetClick() is called by the PointerDown event on the Event Trigger component attached to this gameobject
     public void OnTargetClick()
     {
-        //located the PlayerManager in this Client
+        //locate the PlayerManager in this Client
         NetworkIdentity networkIdentity = NetworkClient.connection.identity;
         PlayerManager = networkIdentity.GetComponent<PlayerManager>();
 

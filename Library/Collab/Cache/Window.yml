@@ -14,14 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Prefabs/Card1.prefab
-    - Assets/Prefabs/Card2.prefab
-    - Assets/Prefabs/DropZone.prefab
-    - ProjectSettings/Physics2DSettings.asset
-    - ProjectSettings/TagManager.asset
+    - Assets/Scripts/TargetClick.cs
     - 
-    m_Values: 010101010101
-  RevisionSummary: Added layers for collision matrix.
+    m_Values: 0101
+  RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0
