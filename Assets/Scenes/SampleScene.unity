@@ -428,10 +428,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -983,6 +983,18 @@ PrefabInstance:
     - target: {fileID: -2830111883615712773, guid: cf8584af327be7d4d824d1662033ee77, type: 3}
       propertyPath: sceneId
       value: 3523672093
+      objectReference: {fileID: 0}
+    - target: {fileID: 432679345646499515, guid: cf8584af327be7d4d824d1662033ee77, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432679345646499515, guid: cf8584af327be7d4d824d1662033ee77, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 432679345646499515, guid: cf8584af327be7d4d824d1662033ee77, type: 3}
+      propertyPath: m_Color.r
+      value: 0.08641434
       objectReference: {fileID: 0}
     - target: {fileID: 669648541516225753, guid: cf8584af327be7d4d824d1662033ee77, type: 3}
       propertyPath: m_Pivot.x

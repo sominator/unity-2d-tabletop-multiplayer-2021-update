@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Scripts/TargetClick.cs
+    - Assets/Scenes/SampleScene.unity
+    - Assets/Scripts/DragDrop.cs
     - 
-    m_Values: 0101
+    m_Values: 010101
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

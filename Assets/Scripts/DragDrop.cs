@@ -5,9 +5,8 @@ using Mirror;
 
 public class DragDrop : NetworkBehaviour
 {
-    //Canvas and DropZone are assigned locally at runtime in Start(), whereas the rest are assigned contextually as this gameobject is dragged and dropped
+    //Canvas is assigned locally at runtime in Start(), whereas the rest are assigned contextually as this gameobject is dragged and dropped
     public GameObject Canvas;
-    public GameObject DropZone;
     public PlayerManager PlayerManager;
 
     private bool isDragging = false;
@@ -20,7 +19,6 @@ public class DragDrop : NetworkBehaviour
     private void Start()
     {
         Canvas = GameObject.Find("Main Canvas");
-        DropZone = GameObject.Find("DropZone");
         
         //check whether this client hasAuthority to manipulate this gameobject
         if (!hasAuthority)
