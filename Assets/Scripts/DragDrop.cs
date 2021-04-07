@@ -31,8 +31,12 @@ public class DragDrop : NetworkBehaviour
         //check every frame to see if this gameobject is being dragged. If it is, make it follow the mouse and set it as a child of the Canvas to render above everything else
         if (isDragging)
         {
-            transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-            transform.SetParent(Canvas.transform, true);
+            //this hasAuthority check is to prevent the non-dragging client from seeing card movement until dropped (if removed, logic will need to be written to invert the direction of card movement on the non-dragging client)
+            if (hasAuthority)
+            {
+                transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+                transform.SetParent(Canvas.transform, true);
+            }
         }        
     }
 
