@@ -3,7 +3,6 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - CardFlipper
     - CardZoom
-    - DebugLogDisplay
     - DragDrop
     - DrawCards
     - IncrementClick
@@ -11,6 +10,8 @@ ScriptsOnlyBuild:
     - TargetClick
     Mirror.Components.dll:
     - Mirror.NetworkTransform
+    Mirror.Editor.dll:
+    - Mirror.NetworkBehaviourInspector
     Mirror.dll:
     - Mirror.NetworkIdentity
     - Mirror.NetworkManager
@@ -20,6 +21,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -39,6 +41,9 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEditor.UI.dll:
+    - UnityEditor.EventSystems.EventTriggerEditor
+    - UnityEditor.UI.ImageEditor
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
@@ -105,8 +110,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4054}
     - Class: 114
       Script: {instanceID: 4230}
-    - Class: 114
-      Script: {instanceID: 4554}
     - Class: 114
       Script: {instanceID: 4748}
     - Class: 114
@@ -956,12 +959,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
-  - hash:
-      serializedVersion: 2
-      Hash: bb560bc3eec556516d3480ba529763ad
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DebugLogDisplay
   - hash:
       serializedVersion: 2
       Hash: 0fb27be807aa299702f28ad0bcad1f46

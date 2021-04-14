@@ -62,7 +62,6 @@
     <Compile Include="Assets\Scripts\CardZoom.cs" />
     <Compile Include="Assets\Scripts\CardFlipper.cs" />
     <Compile Include="Assets\Scripts\TargetClick.cs" />
-    <Compile Include="Assets\Scripts\DebugLogDisplay.cs" />
     <Compile Include="Assets\Scripts\IncrementClick.cs" />
   </ItemGroup>
   <ItemGroup>

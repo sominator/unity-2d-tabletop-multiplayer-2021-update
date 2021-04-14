@@ -14,9 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Scripts/DragDrop.cs
+    - Assets/Prefabs/Card1.prefab
+    - Assets/Prefabs/Card2.prefab
+    - Assets/Scenes/SampleScene.unity
+    - Assets/Scripts/DebugLogDisplay.cs
+    - Assets/Scripts/DebugLogDisplay.cs.meta
     - 
-    m_Values: 0101
+    m_Values: 010101010101
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

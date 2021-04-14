@@ -100,7 +100,6 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   Canvas: {fileID: 0}
-  DropZone: {fileID: 0}
   PlayerManager: {fileID: 0}
 --- !u!114 &5260648829126047132
 MonoBehaviour:
@@ -355,7 +354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  syncMode: 0
+  syncMode: 1
   syncInterval: 0.1
   clientAuthority: 1
   localPositionSensitivity: 0.01
