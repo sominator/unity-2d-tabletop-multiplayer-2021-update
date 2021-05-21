@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Prefabs/Card1.prefab
-    - Assets/Prefabs/Card2.prefab
-    - Assets/Scenes/SampleScene.unity
-    - Assets/Scripts/DebugLogDisplay.cs
-    - Assets/Scripts/DebugLogDisplay.cs.meta
+    - .collabignore
+    - Packages/manifest.json
+    - Packages/packages-lock.json
+    - Packages/packages-lock.json.3405018285
+    - ProjectSettings/ProjectVersion.txt
     - 
-    m_Values: 010101010101
+    m_Values: 000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
