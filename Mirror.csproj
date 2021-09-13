@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2020_2_6;UNITY_2020_2;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;MIRROR;MIRROR_1726_OR_NEWER;MIRROR_3_0_OR_NEWER;MIRROR_3_12_OR_NEWER;MIRROR_4_0_OR_NEWER;MIRROR_5_0_OR_NEWER;MIRROR_6_0_OR_NEWER;MIRROR_7_0_OR_NEWER;MIRROR_8_0_OR_NEWER;MIRROR_9_0_OR_NEWER;MIRROR_10_0_OR_NEWER;MIRROR_11_0_OR_NEWER;MIRROR_12_0_OR_NEWER;MIRROR_13_0_OR_NEWER;MIRROR_14_0_OR_NEWER;MIRROR_15_0_OR_NEWER;MIRROR_16_0_OR_NEWER;MIRROR_17_0_OR_NEWER;MIRROR_18_0_OR_NEWER;MIRROR_24_0_OR_NEWER;MIRROR_26_0_OR_NEWER;MIRROR_27_0_OR_NEWER;MIRROR_28_0_OR_NEWER;MIRROR_29_0_OR_NEWER;MIRROR_30_0_OR_NEWER;MIRROR_30_5_2_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_2020_2_6;UNITY_2020_2;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;MIRROR;MIRROR_1726_OR_NEWER;MIRROR_3_0_OR_NEWER;MIRROR_3_12_OR_NEWER;MIRROR_4_0_OR_NEWER;MIRROR_5_0_OR_NEWER;MIRROR_6_0_OR_NEWER;MIRROR_7_0_OR_NEWER;MIRROR_8_0_OR_NEWER;MIRROR_9_0_OR_NEWER;MIRROR_10_0_OR_NEWER;MIRROR_11_0_OR_NEWER;MIRROR_12_0_OR_NEWER;MIRROR_13_0_OR_NEWER;MIRROR_14_0_OR_NEWER;MIRROR_15_0_OR_NEWER;MIRROR_16_0_OR_NEWER;MIRROR_17_0_OR_NEWER;MIRROR_18_0_OR_NEWER;MIRROR_24_0_OR_NEWER;MIRROR_26_0_OR_NEWER;MIRROR_27_0_OR_NEWER;MIRROR_28_0_OR_NEWER;MIRROR_29_0_OR_NEWER;MIRROR_30_0_OR_NEWER;MIRROR_30_5_2_OR_NEWER;MIRROR_32_1_2_OR_NEWER;MIRROR_32_1_4_OR_NEWER;MIRROR_35_0_OR_NEWER;MIRROR_35_1_OR_NEWER;MIRROR_37_0_OR_NEWER;MIRROR_38_0_OR_NEWER;MIRROR_39_0_OR_NEWER;MIRROR_40_0_OR_NEWER;MIRROR_41_0_OR_NEWER;MIRROR_42_0_OR_NEWER;MIRROR_43_0_OR_NEWER;MIRROR_44_0_OR_NEWER;MIRROR_46_0_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -57,56 +57,91 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Mirror\Runtime\Transport\KCP\MirrorTransport\KcpTransport.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Logging\NetworkLogSettings.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Logging\NetworkLogSettings.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkBehaviour.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkClient.cs" />
     <Compile Include="Assets\Mirror\Runtime\AssemblyInfo.cs" />
     <Compile Include="Assets\Mirror\Runtime\Transport\FallbackTransport.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transport\TelepathyTransport.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transport\Telepathy\TelepathyTransport.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkWriter.cs" />
-    <Compile Include="Assets\Mirror\Runtime\LogFilter.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\LogFilter.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkWriterPool.cs" />
-    <Compile Include="Assets\Mirror\Runtime\CustomAttributes.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Attributes.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\InstantiateNetworkManager.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkReader.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkConnection.cs" />
-    <Compile Include="Assets\Mirror\Runtime\UNetwork.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\IUnityEqualCheck.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Utils.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkDiagnostics.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\Events.cs" />
     <Compile Include="Assets\Mirror\Runtime\ExponentialMovingAverage.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Logging\LogSettings.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Logging\LogSettings.cs" />
     <Compile Include="Assets\Mirror\Runtime\SyncObject.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkVisibility.cs" />
-    <Compile Include="Assets\Mirror\Runtime\StringHash.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\QuitButtonHUD.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\StringHash.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkStartPosition.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkAuthenticator.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Logging\EditorLogSettingsLoader.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Logging\EditorLogSettingsLoader.cs" />
     <Compile Include="Assets\Mirror\Runtime\Transport\Transport.cs" />
     <Compile Include="Assets\Mirror\Runtime\SyncList.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\IRequestCreator.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\JsonStructs.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkMessage.cs" />
-    <Compile Include="Assets\Mirror\Runtime\FloatBytePacker.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\NetworkManagerListServerPong.cs" />
     <Compile Include="Assets\Mirror\Runtime\Transport\MultiplexTransport.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkServer.cs" />
     <Compile Include="Assets\Mirror\Runtime\Compression.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\Extensions.cs" />
     <Compile Include="Assets\Mirror\Runtime\LocalConnections.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkManager.cs" />
-    <Compile Include="Assets\Mirror\Runtime\LogFactory.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\ListServerJson.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\ListServerClientApi.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\LogFactory.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\NetworkManagerListServer.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\ServerListManager.cs" />
     <Compile Include="Assets\Mirror\Runtime\Messages.cs" />
     <Compile Include="Assets\Mirror\Runtime\ClientScene.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Logging\NetworkHeadlessLogger.cs" />
-    <Compile Include="Assets\Mirror\Runtime\MessagePacker.cs" />
-    <Compile Include="Assets\Mirror\Runtime\DotNetCompatibility.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\BaseApi.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\ApiUpdater.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\Logger.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\ListServerServerApi.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Logging\NetworkHeadlessLogger.cs" />
+    <Compile Include="Assets\Mirror\Runtime\MessagePacking.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\RequestCreator.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\DotNetCompatibility.cs" />
     <Compile Include="Assets\Mirror\Runtime\Transport\MiddlewareTransport.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\Player.cs" />
     <Compile Include="Assets\Mirror\Runtime\Pool.cs" />
     <Compile Include="Assets\Mirror\Runtime\RemoteCallHelper.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkConnectionToServer.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkConnectionToClient.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\ListServerBaseApi.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\Ball.cs" />
     <Compile Include="Assets\Mirror\Runtime\SyncSet.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkIdentity.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkTime.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\ServerListUI.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\ApiConnector.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\BallManager.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkManagerHUD.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Logging\LogFactory.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\ListServer.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Logging\LogFactory.cs" />
     <Compile Include="Assets\Mirror\Runtime\NetworkReaderPool.cs" />
     <Compile Include="Assets\Mirror\Runtime\SyncDictionary.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Logging\ConsoleColorLogHandler.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\ICoroutineRunner.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\QuickListServerDebug.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Cloud\ServerListUIItem.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Empty\Logging\ConsoleColorLogHandler.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Mathd.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Batching\Unbatcher.cs" />
+    <Compile Include="Assets\Mirror\Runtime\SnapshotInterpolation\SnapshotInterpolation.cs" />
+    <Compile Include="Assets\Mirror\Runtime\InterestManagement.cs" />
+    <Compile Include="Assets\Mirror\Runtime\SnapshotInterpolation\Snapshot.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Batching\Batcher.cs" />
+    <Compile Include="Assets\Mirror\Runtime\NetworkLoop.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transport\LatencySimulation.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Extensions.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Mirror\Runtime\Mirror.asmdef" />
@@ -350,11 +385,11 @@
     <Reference Include="Mono.CecilX">
       <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.CecilX.Mdb">
-      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>
-    </Reference>
     <Reference Include="AssetStoreTools">
       <HintPath>Assets\AssetStoreTools\Editor\AssetStoreTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CecilX.Mdb">
+      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.2.6f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

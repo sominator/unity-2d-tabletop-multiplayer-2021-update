@@ -58,6 +58,29 @@ public class PlayerManager : NetworkBehaviour
     void CmdPlayCard(GameObject card)
     {
         RpcShowCard(card, "Played");
+        
+        //If this is the Server, trigger the UpdateTurnsPlayed() method to demonstrate how to implement game logic on card drop
+        if (isServer)
+        {
+            UpdateTurnsPlayed();
+        }
+    }
+
+    //UpdateTurnsPlayed() is run only by the Server, finding the Server-only GameManager game object and incrementing the relevant variable
+    [Server]
+    void UpdateTurnsPlayed()
+    {
+        GameManager gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+        gm.UpdateTurnsPlayed();
+        RpcLogToClients("Turns Played: " + gm.TurnsPlayed);
+
+    }
+
+    //RpcLogToClients demonstrates how to request all clients to log a message to their respective consoles
+    [ClientRpc]
+    void RpcLogToClients(string message)
+    {
+        Debug.Log(message);
     }
 
     //ClientRpcs are methods requested by the Server to run on all Clients, and require the [ClientRpc] attribute immediately preceding them

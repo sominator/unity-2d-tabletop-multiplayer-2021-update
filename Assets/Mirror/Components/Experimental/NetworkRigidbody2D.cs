@@ -5,13 +5,11 @@ namespace Mirror.Experimental
     [AddComponentMenu("Network/Experimental/NetworkRigidbody2D")]
     public class NetworkRigidbody2D : NetworkBehaviour
     {
-        static readonly ILogger logger = LogFactory.GetLogger(typeof(NetworkRigidbody2D));
-
         [Header("Settings")]
         [SerializeField] internal Rigidbody2D target = null;
 
         [Tooltip("Set to true if moves come from owner client, set to false if moves always come from server")]
-        [SerializeField] bool clientAuthority = false;
+        public  bool clientAuthority = false;
 
         [Header("Velocity")]
 
@@ -194,7 +192,7 @@ namespace Mirror.Experimental
         {
             if (!hasAuthority)
             {
-                logger.LogWarning("SendToServer called without authority");
+                Debug.LogWarning("SendToServer called without authority");
                 return;
             }
 

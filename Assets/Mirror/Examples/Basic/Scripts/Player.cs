@@ -10,6 +10,18 @@ namespace Mirror.Examples.Basic
         public event System.Action<Color32> OnPlayerColorChanged;
         public event System.Action<int> OnPlayerDataChanged;
 
+        // Players List to manage playerNumber
+        internal static readonly List<Player> playersList = new List<Player>();
+
+        internal static void ResetPlayerNumbers()
+        {
+            int playerNumber = 0;
+            foreach (Player player in playersList)
+            {
+                player.playerNumber = playerNumber++;
+            }
+        }
+
         [Header("Player UI")]
         public GameObject playerUIPrefab;
         GameObject playerUI;
@@ -62,7 +74,7 @@ namespace Mirror.Examples.Basic
             base.OnStartServer();
 
             // Add this to the static Players List
-            ((BasicNetManager)NetworkManager.singleton).playersList.Add(this);
+            playersList.Add(this);
 
             // set the Player Color SyncVar
             playerColor = Random.ColorHSV(0f, 1f, 0.9f, 0.9f, 1f, 1f);
@@ -78,7 +90,7 @@ namespace Mirror.Examples.Basic
         public override void OnStopServer()
         {
             CancelInvoke();
-            ((BasicNetManager)NetworkManager.singleton).playersList.Remove(this);
+            playersList.Remove(this);
         }
 
         // This only runs on the server, called from OnStartServer via InvokeRepeating
