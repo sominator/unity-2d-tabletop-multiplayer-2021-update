@@ -72,7 +72,7 @@ public class PlayerManager : NetworkBehaviour
     {
         GameManager gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         gm.UpdateTurnsPlayed();
-        RpcLogToClients("Turns Played: " + gm.TurnsPlayed);
+        RpcLogToClients($"Turns Played: {gm.TurnsPlayed}");
 
     }
 
@@ -151,6 +151,6 @@ public class PlayerManager : NetworkBehaviour
     void RpcIncrementClick(GameObject card)
     {
         card.GetComponent<IncrementClick>().NumberOfClicks++;
-        Debug.Log("This card has been clicked " + card.GetComponent<IncrementClick>().NumberOfClicks + " times!");
+        Debug.Log($"This card has been clicked {card.GetComponent<IncrementClick>().NumberOfClicks} times!");
     }
 }
